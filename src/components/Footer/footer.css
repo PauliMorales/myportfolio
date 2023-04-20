@@ -3,7 +3,8 @@
   max-width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-column-gap: 2rem;
+  grid-column-gap: 1rem;
+  padding: 2rem 3rem;
 }
 .footer__container {
   row-gap: 2rem;
@@ -13,20 +14,20 @@
   color: var(--white-color);
   margin: 1rem 0;
 }
-
 .footer__text {
   margin: 1em 0;
   color: var(--first-color);
 }
-.footer__link {
-  padding: 0.25rem 0;
+.footer__link{
+  padding: 1rem 0;
 }
+
 .footer__link:hover {
   color: var(--first-color);
 }
 .footer__social {
-  font-size: 1.4rem;
-  margin-right: 0.5rem;
+  font-size: 2rem;
+  margin-right: 1.5rem;
 }
 .footer__social:hover {
   color: var(--first-color);

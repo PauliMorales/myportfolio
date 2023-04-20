@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 1.5em;
 }
 @media screen and (max-width: 768px) {
   .nav__menu {
@@ -63,7 +63,8 @@
 
 @media screen and (min-width: 768px) {
   .nav {
-    height: 3rem;
+    height: 1rem;
+    padding: 2rem 3rem;
   }
   .nav__list {
     display: flex;
