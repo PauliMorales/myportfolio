@@ -53,14 +53,4 @@ img {
   body {
     margin: 0;
   }
-  .section {
-    padding-top: 4rem;
-  }
-  .section-title {
-    margin-bottom: 3rem;
-  }
-  .section-title::after {
-    width: 64px;
-    top: 3rem;
-  }
 }

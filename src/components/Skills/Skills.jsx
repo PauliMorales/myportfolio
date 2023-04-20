@@ -49,7 +49,7 @@ const Skills = () => {
 
   const renderItems = (items) => {
     return items.map((item) => (
-      <div key={item.name}>
+      <div className="skills__icon" key={item.name} >
         <span className="skills__name">{item.name}</span>
         <i className={`bx ${item.icon}`}></i>
       </div>
@@ -65,7 +65,7 @@ const Skills = () => {
           {skills.map((skill) => (
             <div key={skill.title} className="skills__box">
               <h3 className="skills__subtitle">{skill.title}</h3>
-              {renderItems(skill.items)}
+              <div className="skills__items">{renderItems(skill.items)}</div>
             </div>
           ))}
 

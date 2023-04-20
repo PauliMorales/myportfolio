@@ -1,10 +1,5 @@
 .contact__container {
   row-gap: 2rem;
-  max-width: 100%;
-  display: flex;
-  width: calc(100% - 2rem);
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 .contact__subtitle {
   font-size: var(--normal-font-size);
@@ -12,12 +7,18 @@
 }
 .contact__text {
   display: inline-block;
-  margin-bottom: var(--mb-2);
+  margin-bottom: 1rem;
 }
 .contact__inputs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1rem;
+  border-radius: 0.5em;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  padding: 0.2rem;
+  margin: 0.5rem 0;
 }
 .contact__input {
   width: 100%;
@@ -25,28 +26,63 @@
   outline: none;
   border: 1.5px solid var(--dark-color);
   font-size: var(--normal-font-size);
-  margin-bottom: var(--mb-4);
+  margin-bottom: 2rem;
   border-radius: 0.5rem;
 }
 .contact__button {
-  display: block;
-  background-color: var(--first-color);
-  color: var(--white-color);
   padding: 0.75rem 2.5rem;
   margin-left: auto;
   border-radius: 0.5rem;
   border: none;
   outline: none;
-  font-size: var(--normal-font-size);
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(
+    rgba(179, 132, 201, 0.84),
+    rgba(57, 31, 91, 0.84) 50%
+  );
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,
+    rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #ffffff;
   cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,
+    rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px,
+    rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
 }
 
-@media screen and (max-width: 768px) {
+.contact__button:hover {
+  background-image: linear-gradient(#b384c9, #391f5b 50%);
+}
+
+.contact__form {
+  background: var(--first-color);
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
   .contact__container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    justify-content: end;
+    align-items: baseline;
   }
   .contact__form {
     width: 380px;
+    margin: 1rem;
   }
+
 }

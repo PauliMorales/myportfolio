@@ -1,12 +1,5 @@
 .portfolio {
   background-color: var(--white-color);
-  max-width: 1024px;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-column-gap: 2rem;
-  width: calc(100% - 2rem);
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 .portfolio__container {
   justify-items: center;
@@ -40,7 +33,7 @@
   color: var(--dark-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .portfolio__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
