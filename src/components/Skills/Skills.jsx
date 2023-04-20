@@ -1,0 +1,81 @@
+import React from "react";
+import "./skills.css";
+
+const Skills = () => {
+  const skills = [
+    {
+      title: "Development",
+      items: [
+        {
+          name: "Html",
+          icon: "bxl-html5",
+        },
+        {
+          name: "Css",
+          icon: "bxl-css3",
+        },
+        {
+          name: "Javascript",
+          icon: "bxl-javascript",
+        },
+        {
+          name: "React",
+          icon: "bxl-react",
+        },
+      ],
+    },
+    {
+      title: "Design",
+      items: [
+        {
+          name: "Figma",
+          icon: "bxl-figma",
+        },
+        {
+          name: "Adobe XD",
+          icon: "bxl-adobe",
+        },
+        {
+          name: "Photoshop",
+          icon: "bxs-layer",
+        },
+        {
+          name: "Canva",
+          icon: "bxs-magic-wand",
+        },
+      ],
+    },
+  ];
+
+  const renderItems = (items) => {
+    return items.map((item) => (
+      <div key={item.name}>
+        <span className="skills__name">{item.name}</span>
+        <i className={`bx ${item.icon}`}></i>
+      </div>
+    ));
+  };
+
+  return (
+    <div>
+      <section className="skills section" id="skills">
+        <h2 className="section-title">Skills</h2>
+
+        <div className="skills__container">
+          {skills.map((skill) => (
+            <div key={skill.title} className="skills__box">
+              <h3 className="skills__subtitle">{skill.title}</h3>
+              {renderItems(skill.items)}
+            </div>
+          ))}
+
+          <div className="skills__img">
+            <img src="assets/img/skill.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Skills;
