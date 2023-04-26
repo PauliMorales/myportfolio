@@ -1,27 +1,32 @@
 import React from "react";
-import "./portfolio.css"
+import "./portfolio.css";
+import weather from "../../assets/images/weather.png";
+import galletas from "../../assets/images/galletasdelafortuna.png"
+import user from "../../assets/images/user.png"
+import rickAndMorty from "../../assets/images/rickandmorty.png"
+import protPortafilio from "../../assets/images/protportafolio.png"
 
 const Portfolio = () => {
   const projects = [
     {
-      image: "image1",
-      link: "https://lustrous-bienenstitch-642eac.netlify.app",
+      image: weather,
+      link: "https://fancy-seahorse-27c04f.netlify.app" /*WeatherApp */,
     },
     {
-      image: "image2",
-      link: "https://lustrous-bienenstitch-642eac.netlify.app",
+      image: galletas,
+      link: "https://jazzy-dasik-680bf5.netlify.app" /*Galletas de la Fortuna */,
     },
     {
-      image: "image3",
-      link: "https://lustrous-bienenstitch-642eac.netlify.app",
+      image: user,
+      link: "https://bright-dasik-78e30e.netlify.app" /*UsersCrud */,
     },
     {
-      image: "image4",
-      link: "https://lustrous-bienenstitch-642eac.netlify.app",
+      image: rickAndMorty,
+      link: "https://lustrous-bienenstitch-642eac.netlify.app" /*RickAndMorty*/,
     },
     {
-      image: "image5",
-      link: "https://lustrous-bienenstitch-642eac.netlify.app",
+      image: protPortafilio,
+      link: "https://stunning-scone-233525.netlify.app" /*prototipoPortafolio */,
     },
   ];
 
@@ -33,7 +38,7 @@ const Portfolio = () => {
         <div className="portfolio__container">
           {projects.map((project) => (
             <div key={project.image} className="portfolio__img">
-              <a href={project.link} className="portfolio__link-name">
+              <a href={project.link} className="portfolio__link-name" target="_blank">
                 <span className="portfolio__details">View details</span>
                 <img src={project.image} alt="" />
               </a>

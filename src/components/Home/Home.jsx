@@ -14,7 +14,7 @@ const Home = () => {
           </h1>
 
           <div className="home__scroll">
-            <a href="#about" className="home__scroll-link">
+            <a href="#portfolio" className="home__scroll-link">
               <i className="bx bx-up-arrow-alt"></i>Scroll down
             </a>
           </div>
