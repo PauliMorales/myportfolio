@@ -2,17 +2,18 @@
   background-color: var(--white-color);
 }
 .portfolio__container {
-  justify-items: center;
-  row-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
 }
 .portfolio__img {
-  position: relative;
-  overflow: hidden;
+  margin: 3px;
 }
 .portfolio__img img {
   border-radius: 0.5rem;
-  width: 40%;
-  height: 40%;
+  padding: 4px;
+  background-color: violet;
 }
 .portfolio__link {
   position: absolute;
@@ -36,9 +37,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio__container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 2rem;
+  .portfolio__img {
+    margin: 37px;
   }
 }

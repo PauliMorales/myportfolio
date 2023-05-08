@@ -36,9 +36,7 @@ const About = () => {
             <h2 className="about__subtitle">I'am Paula Morales</h2>
             <span className="about__profession">Front-end Developer</span>
             <p className="about__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-              consectetur, architecto quas fugiat, iste inventore facere
-              repellendus delectus id, vitae blanditiis.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus quidem nam maxime voluptate quod laboriosam numquam eum, et iste deleniti, a dolore laudantium nobis, dicta quis nulla nisi tenetur aut rerum magnam voluptas aperiam. Ipsum obcaecati porro dicta impedit? Porro maiores nobis modi quasi, molestiae nihil, minima temporibus, repudiandae cupiditate aliquam facilis provident. Quo ab itaque minus maxime, id, quia fugiat rerum sed adipisci esse at, ut ipsum numquam nisi labore expedita iusto pariatur. Ea culpa repudiandae totam recusandae saepe veniam tempora rerum labore earum, blanditiis ducimus commodi. Ab, error consequuntur vero omnis voluptatum blanditiis iste ea repudiandae pariatur similique nihil, cupiditate eaque quos quo provident exercitationem voluptates facere! Omnis nemo doloremque cumque, labore hic quod aspernatur libero cupiditate.
             </p>
 
             <div className="about__social">

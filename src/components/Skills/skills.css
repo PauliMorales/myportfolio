@@ -1,7 +1,7 @@
 .skills__container {
   max-width: 100%;
   width: calc(100% - 2rem);
-  margin: 2rem;
+  margin: 1rem;
 }
 .skills__subtitle {
   color: var(--first-color);
@@ -21,13 +21,27 @@
 .skills__img img {
   border-radius: 0.5rem;
 }
+.skills__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .skills__items .bx {
-  color: var(--first-color);
+  color: white;
+  font-size: 50px;
+  background-color: violet;
+  padding: 1rem;
+  border-radius: 50%;
 }
 
 .skills__icon {
   margin: 1rem 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -37,7 +51,7 @@
 
   .skills__subtitle {
     text-align: center;
-    margin: 4rem;
+    margin: 1rem;
   }
 
   .skills__items {

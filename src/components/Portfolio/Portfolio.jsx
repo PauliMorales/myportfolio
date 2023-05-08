@@ -5,28 +5,33 @@ import galletas from "../../assets/images/galletasdelafortuna.png"
 import user from "../../assets/images/user.png"
 import rickAndMorty from "../../assets/images/rickandmorty.png"
 import protPortafilio from "../../assets/images/protportafolio.png"
+import pokedex from "../../assets/images/pokedex.png"
 
 const Portfolio = () => {
   const projects = [
     {
-      image: weather,
-      link: "https://fancy-seahorse-27c04f.netlify.app" /*WeatherApp */,
-    },
-    {
-      image: galletas,
-      link: "https://jazzy-dasik-680bf5.netlify.app" /*Galletas de la Fortuna */,
-    },
-    {
-      image: user,
-      link: "https://bright-dasik-78e30e.netlify.app" /*UsersCrud */,
+      image: pokedex,
+      link: "https://pokedex-paumor-bc2700.netlify.app" /*Pokedex*/,
     },
     {
       image: rickAndMorty,
-      link: "https://lustrous-bienenstitch-642eac.netlify.app" /*RickAndMorty*/,
+      link: "https://rickandmorty-paumor-642eac.netlify.app" /*RickAndMorty*/,
+    },
+    {
+      image: weather,
+      link: "https://weatherapp-paumor-27c04f.netlify.app" /*WeatherApp */,
+    },
+    {
+      image: user,
+      link: "https://userapp-paumor-78e30e.netlify.app" /*UsersCrud */,
+    },
+    {
+      image: galletas,
+      link: "https://fortunecookies-paumor-680bf5.netlify.app" /*Galletas de la Fortuna */,
     },
     {
       image: protPortafilio,
-      link: "https://stunning-scone-233525.netlify.app" /*prototipoPortafolio */,
+      link: "https://portfoliomockupone-paumor-233525.netlify.app" /*prototipoPortafolio */,
     },
   ];
 
@@ -39,8 +44,8 @@ const Portfolio = () => {
           {projects.map((project) => (
             <div key={project.image} className="portfolio__img">
               <a href={project.link} className="portfolio__link-name" target="_blank">
-                <span className="portfolio__details">View details</span>
                 <img src={project.image} alt="" />
+                <span className="portfolio__details">View details</span>
               </a>
             </div>
           ))}
