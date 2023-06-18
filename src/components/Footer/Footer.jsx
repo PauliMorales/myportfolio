@@ -27,12 +27,12 @@ const Footer = () => {
       <footer className="footer section">
         <div className="footer__container">
           <div className="footer__data">
-            <h2 className="footer__title">EXPLORE</h2>
+            <h2 className="footer__title">EXPLORAR</h2>
             <ul>{renderList(NAV_ITEMS, "footer__item", "footer__link")}</ul>
           </div>
 
           <div className="footer__data">
-            <h2 className="footer__title">FOLLOW</h2>
+            <h2 className="footer__title">SIGUEME</h2>
             <div className="footer__follow">
               {sNetworks.map((network) => (
                 <a

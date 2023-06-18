@@ -1,5 +1,6 @@
 import React from "react";
 import "./skills.css";
+import { TITLES } from "../../constants/arrays";
 
 const Skills = () => {
   const skills = [
@@ -59,7 +60,7 @@ const Skills = () => {
   return (
     <div>
       <section className="skills section" id="skills">
-        <h2 className="section-title">Skills</h2>
+        <h2 className="section-title">{TITLES.SKILLS}</h2>
 
         <div className="skills__container">
           {skills.map((skill) => (

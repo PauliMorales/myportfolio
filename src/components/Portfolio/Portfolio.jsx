@@ -1,11 +1,12 @@
 import React from "react";
 import "./portfolio.css";
 import weather from "../../assets/images/weather.png";
-import galletas from "../../assets/images/galletasdelafortuna.png"
-import user from "../../assets/images/user.png"
-import rickAndMorty from "../../assets/images/rickandmorty.png"
-import protPortafilio from "../../assets/images/protportafolio.png"
-import pokedex from "../../assets/images/pokedex.png"
+import galletas from "../../assets/images/galletasdelafortuna.png";
+import user from "../../assets/images/user.png";
+import rickAndMorty from "../../assets/images/rickandmorty.png";
+import protPortafilio from "../../assets/images/protportafolio.png";
+import pokedex from "../../assets/images/pokedex.png";
+import { TITLES } from "../../constants/arrays";
 
 const Portfolio = () => {
   const projects = [
@@ -38,15 +39,21 @@ const Portfolio = () => {
   return (
     <div>
       <section className="portfolio section" id="portfolio">
-        <h2 className="section-title">Portfolio</h2>
+        <h2 className="section-title">{TITLES.PORTFOLIO}</h2>
 
         <div className="portfolio__container">
           {projects.map((project) => (
             <div key={project.image} className="portfolio__img">
-              <a href={project.link} className="portfolio__link-name" target="_blank">
-                <img src={project.image} alt="" />
-                <span className="portfolio__details">View details</span>
-              </a>
+              <img src={project.image} alt="" />
+              <div className="portfolio__link">
+                <a
+                  href={project.link}
+                  className="portfolio__link-name"
+                  target="_blank"
+                >
+                  View details
+                </a>
+              </div>
             </div>
           ))}
         </div>

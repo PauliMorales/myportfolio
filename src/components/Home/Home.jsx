@@ -15,7 +15,7 @@ const Home = () => {
 
           <div className="home__scroll">
             <a href="#portfolio" className="home__scroll-link">
-              <i className="bx bx-up-arrow-alt"></i>Scroll down
+              <i className="bx bx-up-arrow-alt"></i>Mis Proyectos
             </a>
           </div>
 
