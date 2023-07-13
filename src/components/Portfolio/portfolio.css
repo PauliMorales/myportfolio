@@ -14,7 +14,7 @@
 .portfolio__img img {
   border-radius: 0.5rem;
   padding: 4px;
-  background-color: violet;
+  background-color: var(--first-color);
 }
 .portfolio__link {
   position: absolute;

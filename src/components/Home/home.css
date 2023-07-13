@@ -48,11 +48,11 @@
 .home__img {
   position: absolute;
   right: 0;
-  bottom: 25%;
+  bottom: 15%;
   width: 90%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
   .home__container {
     height: 100vh;
     grid-template-rows: 1.7fr 1fr;

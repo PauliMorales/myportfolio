@@ -30,9 +30,9 @@
 }
 
 .skills__items .bx {
-  color: white;
+  color: var(--white-color);
   font-size: 50px;
-  background-color: violet;
+  background-color: var(--first-color);
   padding: 1rem;
   border-radius: 50%;
 }
