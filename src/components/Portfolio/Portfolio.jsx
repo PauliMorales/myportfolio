@@ -6,10 +6,16 @@ import user from "../../assets/images/user.png";
 import rickAndMorty from "../../assets/images/rickandmorty.png";
 import protPortafilio from "../../assets/images/protportafolio.png";
 import pokedex from "../../assets/images/pokedex.png";
+import usermyapi from "../../assets/images/usermyapi.png"
+import ecommerce from "../../assets/images/ecommerceAcademloApi.png"
 import { TITLES } from "../../constants/arrays";
 
 const Portfolio = () => {
   const projects = [
+    {
+      image: ecommerce,
+      link: "https://ecommerce-academlo-api-paumor.netlify.app" /*ecommerce con api de academlo*/,
+    },
     {
       image: pokedex,
       link: "https://pokedex-paumor-bc2700.netlify.app" /*Pokedex*/,
@@ -34,6 +40,10 @@ const Portfolio = () => {
       image: protPortafilio,
       link: "https://portfoliomockupone-paumor-233525.netlify.app" /*prototipoPortafolio */,
     },
+    {
+      image: usermyapi,
+      link: "https://my-crud-users-paumor.netlify.app" /*usersCrud con Api propia*/,
+    }
   ];
 
   return (

@@ -48,8 +48,8 @@
 .home__img {
   position: absolute;
   right: 0;
-  bottom: 7%;
-  width: 80%;
+  bottom: 10%;
+  width: 100%;
 }
 
 @media screen and (min-width: 850px) {
@@ -61,8 +61,8 @@
   }
   .home__img {
     width: 50%;
-    right: 5%;
-    bottom: 1%;
+    right: 9%;
+    bottom: 12%;
   }
   .home__scroll {
     padding: 10% 1% 1%;

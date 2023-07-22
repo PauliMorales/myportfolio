@@ -23,6 +23,10 @@ const Skills = () => {
           name: "React",
           icon: "bxl-react",
         },
+        {
+          name: "Node.js",
+          icon: "bxl-nodejs",
+        },
       ],
     },
     {

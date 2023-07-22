@@ -3,7 +3,7 @@
 }
 .portfolio__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   text-align: center;
 }
@@ -13,8 +13,9 @@
 }
 .portfolio__img img {
   border-radius: 0.5rem;
-  padding: 4px;
+  padding: 5px;
   background-color: var(--first-color);
+  
 }
 .portfolio__link {
   position: absolute;
