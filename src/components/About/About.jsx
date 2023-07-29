@@ -2,6 +2,7 @@ import React from "react";
 import photo from "../../assets/images/photo.png";
 import "./about.css";
 import { TITLES } from "../../constants/arrays";
+import cvFile from "../../assets/documents/cv.pdf";
 
 const About = () => {
   const socialMedia = [
@@ -51,6 +52,11 @@ const About = () => {
               trabajar en equipo y creo en la importancia de la colaboración
               para lograr los mejores resultados en cada proyecto.
             </p>
+            <button className="about__button">
+              <a href={cvFile} download="cv_paula_morales.pdf">
+                Descarga mi CV
+              </a>
+            </button>
 
             <div className="about__social">
               {socialMedia.map((red) => (

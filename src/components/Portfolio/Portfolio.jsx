@@ -14,7 +14,7 @@ const Portfolio = () => {
   const projects = [
     {
       image: ecommerce,
-      link: "https://ecommerce-academlo-api-paumor.netlify.app" /*ecommerce con api de academlo*/,
+      link: "https://ecommerce-api-academlo-paumor.netlify.app" /*ecommerce con api de academlo*/,
     },
     {
       image: pokedex,

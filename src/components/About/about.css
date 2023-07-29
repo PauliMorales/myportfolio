@@ -32,6 +32,30 @@
 .about__text {
   margin: 2rem 0.5rem;
 }
+.about__button{
+  padding: 0.6rem 2.5rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient( rgba(179, 132, 201, 0.84), rgba(54, 32, 90, 0.60) 50% );
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px, rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px, rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
 .about__profession {
   display: block;
   margin-bottom: 2rem;

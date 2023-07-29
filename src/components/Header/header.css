@@ -47,6 +47,8 @@
 }
 .nav__logo {
   color: var(--white-color);
+  font-size: 24px;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.8);
 }
 .nav__toggle {
   color: var(--white-color);
