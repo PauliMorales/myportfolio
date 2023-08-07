@@ -2,7 +2,7 @@ import React from "react";
 import photo from "../../assets/images/photo.png";
 import "./about.css";
 import { TITLES } from "../../constants/arrays";
-import cvFile from "../../assets/documents/cv.pdf";
+import cvFile from "../../assets/documents/PAULA_MORALES_CV.pdf";
 
 const About = () => {
   const socialMedia = [

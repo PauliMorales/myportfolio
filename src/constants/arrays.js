@@ -1,7 +1,7 @@
 const NAV_ITEMS = [
   {
-    refer: "#home",
-    name: "Inicio",
+    // refer: "#home",
+    // name: "Inicio",
   },
   {
     refer: "#about",

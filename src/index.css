@@ -35,7 +35,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--white-color);
 }
 img {
   max-width: 100%;

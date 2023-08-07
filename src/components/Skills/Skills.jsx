@@ -24,8 +24,16 @@ const Skills = () => {
           icon: "bxl-react",
         },
         {
+          name: "Redux",
+          icon: "bxl-redux"
+        },
+        {
           name: "Node.js",
           icon: "bxl-nodejs",
+        },
+        {
+          name: "PostgreSQL",
+          icon: "bxl-postgresql"
         },
       ],
     },

@@ -22,7 +22,7 @@
   width: 100%;
   height: 100%;
   padding: 2rem;
-  background-color: var(--first-color)/60%;
+  background-color: var(--first-color) / 60%;
   transition: 0.5s;
   backdrop-filter: blur(15px);
 }
@@ -38,7 +38,7 @@
   margin-bottom: 2rem;
 }
 .nav__link {
-  font-size: 1.2rem;
+  font-size: 16px;
   position: relative;
   color: whitesmoke;
 }
@@ -46,9 +46,15 @@
   color: var(--first-color);
 }
 .nav__logo {
-  color: var(--white-color);
+  padding: 0 4rem;
   font-size: 24px;
-  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+  color: transparent;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 220, 255, 0.5);
 }
 .nav__toggle {
   color: var(--white-color);
@@ -62,7 +68,7 @@
 @media screen and (min-width: 768px) {
   .nav {
     height: 1rem;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 0;
   }
   .nav__list {
     display: flex;
