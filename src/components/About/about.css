@@ -84,5 +84,6 @@
   }
   .about__text {
     margin: 0 3rem 2rem 1px;
+    text-align: justify;
   }
 }

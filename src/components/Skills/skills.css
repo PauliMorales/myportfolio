@@ -56,7 +56,10 @@
 
   .skills__items {
     display: flex;
-    justify-content: space-around;
+    max-width: 600px;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
   }
 
   .skills__icon {

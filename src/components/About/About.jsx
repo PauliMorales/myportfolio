@@ -36,9 +36,9 @@ const About = () => {
 
           <div>
             <h2 className="about__subtitle">Yo soy Paula Morales</h2>
-            <span className="about__profession">Desarrolladora Frontend</span>
+            <span className="about__profession">Desarrolladora Fullstack</span>
             <p className="about__text">
-              Soy Desarrolladora Frontend con un alto grado de compromiso con el
+              Soy Desarrolladora Fullstack con un alto grado de compromiso con el
               éxito y la ética laboral. Me apasiona el aprendizaje continuo y la
               mejora profesional me impulsa a mantenerme actualizada en mi campo
               y buscar oportunidades para crecer y desarrollarme. Mi autonomía y
