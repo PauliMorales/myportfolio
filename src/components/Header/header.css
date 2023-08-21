@@ -38,7 +38,7 @@
   margin-bottom: 2rem;
 }
 .nav__link {
-  font-size: 16px;
+  font-size: 20px;
   position: relative;
   color: whitesmoke;
 }
@@ -46,8 +46,7 @@
   color: var(--first-color);
 }
 .nav__logo {
-  padding: 0 4rem;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
   color: transparent;
   background: #666666;
@@ -74,7 +73,7 @@
     display: flex;
   }
   .nav__item {
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom: 0;
   }
   .nav__toggle {
@@ -94,5 +93,9 @@
     height: auto;
     background-color: transparent;
     backdrop-filter: none;
+  }
+  .nav__logo {
+    padding: 0 2rem;
+    font-size: 20px;
   }
 }

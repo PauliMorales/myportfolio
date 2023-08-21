@@ -49,10 +49,10 @@
   position: absolute;
   right: 0;
   bottom: 10%;
-  width: 100%;
+  width: 80%;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 768px) {
   .home__container {
     height: 100vh;
     grid-template-rows: 1.7fr 1fr;
@@ -66,5 +66,8 @@
   }
   .home__scroll {
     padding: 10% 1% 1%;
+  }
+  .home__img {
+    width: 49%;
   }
 }
