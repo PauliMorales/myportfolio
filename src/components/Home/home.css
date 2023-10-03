@@ -49,7 +49,7 @@
   color: var(--white-color);
   white-space: nowrap;
   border-right: 4px solid;
-  width: 16.3ch;
+  width: 20ch;
   animation: typingN 3s steps(20), blinkN 0.5s infinite step-end alternate;
   overflow: hidden;
 }
@@ -68,7 +68,7 @@
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 19ch;
+  width: 23ch;
   animation: typing 4s steps(23), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
