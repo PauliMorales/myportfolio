@@ -5,7 +5,6 @@ import "./header.css";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
@@ -38,6 +37,11 @@ const Header = () => {
             <i className="bx bx-heart-square"></i>
           </div>
         </nav>
+        <div className="nav__whatsapp">
+          <a href="https://wa.me/+573164623534" target="_blank">
+            <img src="src\assets\images\gif-whatsapp.gif" alt="" />
+          </a>
+        </div>
       </header>
     </div>
   );
