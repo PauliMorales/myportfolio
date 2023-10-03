@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { renderList } from "../../utils";
 import { NAV_ITEMS } from "../../constants/arrays";
+import whatsapp from "../../assets/images/gif-whatsapp.gif"
 import "./header.css";
 
 const Header = () => {
@@ -39,7 +40,7 @@ const Header = () => {
         </nav>
         <div className="nav__whatsapp">
           <a href="https://wa.me/+573164623534" target="_blank">
-            <img src="src\assets\images\gif-whatsapp.gif" alt="" />
+            <img src={whatsapp} alt="" />
           </a>
         </div>
       </header>
