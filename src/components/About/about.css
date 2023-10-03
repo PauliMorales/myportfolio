@@ -14,7 +14,6 @@
 .about__img {
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
   width: 120px;
   height: 120px;
   background-color: var(--first-color);
@@ -23,12 +22,9 @@
 }
 .about__img img {
   width: auto;
+  
 }
-.about__subtitle {
-  font-size: var(--h2-font-size);
-  color: var(--first-color);
-  margin-bottom: 0.5rem;
-}
+
 .about__text {
   margin: 2rem 0.5rem;
   text-align: justify;
@@ -59,10 +55,7 @@
 .about__button:hover {
   background-image: linear-gradient(#b384c9, #391f5b 50%);
 }
-.about__profession {
-  display: block;
-  margin-bottom: 2rem;
-}
+
 .about__social-icon {
   font-size: 1.5rem;
   margin: 0 0.8rem;
@@ -76,7 +69,6 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
-    padding: 4rem 0;
   }
   .about__img {
     width: 300px;

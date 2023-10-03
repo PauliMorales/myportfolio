@@ -17,7 +17,7 @@ const Header = () => {
         <nav className="nav">
           <div>
             <a href="#" className="nav__logo">
-              Paula Morales
+              Mi Portafolio
             </a>
           </div>
 

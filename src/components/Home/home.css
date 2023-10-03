@@ -3,18 +3,19 @@
   background-color: var(--first-color);
   overflow: hidden;
   max-width: 100%;
-  padding: 3rem 1rem;
+  padding: 4rem 1rem 0rem 1rem;
 }
 .home__container {
   height: calc(100vh - 3rem);
   row-gap: 5rem;
 }
 .home__title {
-  align-self: flex-end;
-  font-size: var(--big-font-size);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 7rem;
   color: var(--white-color);
   line-height: 0.8;
-  padding: 2rem 0 0;
   position: relative;
   z-index: 10;
   animation-name: entrada-izquierda;
@@ -32,24 +33,70 @@
     opacity: 1;
   }
 }
-
 .home__title span {
   text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
 }
+
+.home__subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 3rem 0;
+}
+
+.home__name {
+  font-size: 32px;
+  color: var(--white-color);
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 16.3ch;
+  animation: typingN 3s steps(20), blinkN 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+@keyframes typingN {
+  from {
+    width: 0;
+  }
+}
+@keyframes blinkN {
+  50% {
+    border-color: transparent;
+  }
+}
+.home__profession {
+  margin-bottom: 2rem;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 19ch;
+  animation: typing 4s steps(23), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+  width: 100%;
+}
 .home__scroll {
-  align-self: flex-end;
-  padding: 15% 1% 1%;
+  margin: 8rem 0 0 0;
+  display: flex;
+  justify-content: flex-end;
 }
 .home__scroll-link {
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   color: var(--white-color);
-}
-.home__img {
-  position: absolute;
-  right: 0;
-  bottom: 10%;
-  width: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -57,17 +104,24 @@
     height: 100vh;
     grid-template-rows: 1.7fr 1fr;
     row-gap: 0;
-    padding: 1.5rem;
+    padding: 0.5rem;
   }
+  .home__title{
+    font-size: 10rem;
+  }
+  .home__name{
+    font-size: 4rem;
+  }
+  .home__profession{
+    font-size: 2rem;
+  }
+
   .home__img {
-    width: 48%;
-    right: 9%;
-    bottom: 12%;
+    width: 50%;
+    right: 50%;
+    bottom: 0%;
   }
   .home__scroll {
-    padding: 10% 1% 1%;
-  }
-  .home__img {
-    width: 49%;
+    padding: 28% 1% 1%;
   }
 }

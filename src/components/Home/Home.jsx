@@ -9,17 +9,18 @@ const Home = () => {
         <div className="home__container">
           <h1 className="home__title">
             <span>HE</span>
-            <br />
-            LLO.
+            <p>LLO</p> 
           </h1>
-
+          <div className="home__subtitle">
+            <h2 className="home__name">Yo soy Paula Morales</h2>
+            <span className="home__profession">Desarrolladora Fullstack</span>
+            <img src={pic} alt="" className="home__img" />
+          </div>
           <div className="home__scroll">
             <a href="#portfolio" className="home__scroll-link">
               <i className="bx bx-up-arrow-alt"></i>Mis Proyectos
             </a>
           </div>
-
-          <img src={pic} alt="" className="home__img" />
         </div>
       </section>
     </div>

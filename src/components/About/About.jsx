@@ -35,15 +35,14 @@ const About = () => {
           </div>
 
           <div>
-            <h2 className="about__subtitle">Yo soy Paula Morales</h2>
-            <span className="about__profession">Desarrolladora Fullstack</span>
             <p className="about__text">
-              Soy Desarrolladora Fullstack con un alto grado de compromiso con el
-              éxito y la ética laboral. Me apasiona el aprendizaje continuo y la
-              mejora profesional me impulsa a mantenerme actualizada en mi campo
-              y buscar oportunidades para crecer y desarrollarme. Mi autonomía y
-              capacidad de aprendizaje rápido me permiten dominar rápidamente
-              nuevas tecnologías y herramientas.
+              Soy <strong>Desarrolladora Fullstack</strong> con un alto grado de
+              compromiso con el éxito y la ética laboral. Me apasiona el
+              aprendizaje continuo y la mejora profesional me impulsa a
+              mantenerme actualizada en mi campo y buscar oportunidades para
+              crecer y desarrollarme. Mi autonomía y capacidad de aprendizaje
+              rápido me permiten dominar rápidamente nuevas tecnologías y
+              herramientas.
               <br />
               <br />
               Poseo una orientación al detalle y una capacidad de atención y
@@ -52,24 +51,24 @@ const About = () => {
               trabajar en equipo y creo en la importancia de la colaboración
               para lograr los mejores resultados en cada proyecto.
             </p>
-            <button className="about__button">
-              <a href={cvFile} download="cv_paula_morales.pdf">
-                Descarga mi CV
-              </a>
-            </button>
+          </div>
+          <button className="about__button">
+            <a href={cvFile} download="cv_paula_morales.pdf">
+              Descarga mi CV
+            </a>
+          </button>
 
-            <div className="about__social">
-              {socialMedia.map((red) => (
-                <a
-                  key={red.link}
-                  href={red.link}
-                  className="about__social-icon"
-                  target="_blank"
-                >
-                  <i className={`bx ${red.icon}`}></i>
-                </a>
-              ))}
-            </div>
+          <div className="about__social">
+            {socialMedia.map((red) => (
+              <a
+                key={red.link}
+                href={red.link}
+                className="about__social-icon"
+                target="_blank"
+              >
+                <i className={`bx ${red.icon}`}></i>
+              </a>
+            ))}
           </div>
         </div>
       </section>

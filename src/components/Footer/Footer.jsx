@@ -6,19 +6,9 @@ import "./footer.css";
 const Footer = () => {
   const sNetworks = [
     {
-      name: "Facebook",
-      link: "https://www.facebook.com/paumor271?mibextid=ZbWKwL",
-      icon: "bxl-facebook",
-    },
-    {
-      name: "Instagram",
-      link: "https://instagram.com/paulita.mor?igshid=ZDdkNTZiNTM=",
-      icon: "bxl-instagram",
-    },
-    {
-      name: "twitter",
-      link: "https://twitter.com/PaulitaMoralesd?t=lsCz9mCrW3uxYX6ELurmnw&s=09",
-      icon: "bxl-twitter",
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/paula-andrea-morales-delgado-6b591025a",
+      icon: "bxl-linkedin"
     },
   ];
 
