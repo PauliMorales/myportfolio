@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../../assets/images/photo.png";
+import photo from "../../assets/images/photo.gif";
 import "./about.css";
 import { TITLES } from "../../constants/arrays";
 import cvFile from "../../assets/documents/PAULA_MORALES_CV.pdf";

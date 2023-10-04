@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { renderList } from "../../utils";
 import { NAV_ITEMS } from "../../constants/arrays";
-import whatsapp from "../../assets/images/gif-whatsapp.gif"
+import whatsapp from "../../assets/images/gif-whatsapp.gif";
 import "./header.css";
 
 const Header = () => {
@@ -15,10 +15,14 @@ const Header = () => {
     <div>
       <header className="header">
         <nav className="nav">
-          <div>
-            <a href="#" className="nav__logo">
+          <div className="nav__logo">
+            <a href="#" className="nav__myport">
               Mi Portafolio
             </a>
+            <span className="nav__switch">
+              <i className="bx bxs-sun"></i>
+              <i className="bx bxs-moon"></i>
+            </span>
           </div>
 
           <div

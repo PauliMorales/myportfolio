@@ -31,7 +31,4 @@
     width: 64px;
     top: 3rem;
   }
-  .bx:hover {
-    transform: scale(2);
-  }
 }
