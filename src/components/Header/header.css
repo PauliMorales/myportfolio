@@ -98,7 +98,7 @@
   width: 80px;
 }
 .content {
-  width:237px;
+  width:205px;
   line-height:40px;
   color:var(--nav-link);
   height:40px;
@@ -107,6 +107,7 @@
   left:50%;
   margin-top:-15px;
   margin-left: -52px;
+  z-index: -1;
   
   
   &:before {
