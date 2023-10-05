@@ -53,7 +53,9 @@ const About = () => {
             </p>
           </div>
           <button className="about__button">
-            <a href={cvFile} download="cv_paula_morales.pdf">
+            <span class="about__button-shadow"></span>
+            <span class="about__button-edge"></span>
+            <a className="about__button-front" href={cvFile} download="cv_paula_morales.pdf">
               Descarga mi CV
             </a>
           </button>

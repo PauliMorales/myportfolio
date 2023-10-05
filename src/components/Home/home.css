@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
 }
 .home__name {
   font-size: 29px;
@@ -60,7 +60,7 @@
   }
 }
 .home__profession {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
@@ -81,13 +81,14 @@
 }
 .home__img {
   position: absolute;
-  right: 0;
-  bottom: 0%;
-  width: 100%;
+  right: 45%;
+  bottom: 9%;
+  width: 57%;
 }
 .home__scroll {
   display: flex;
   justify-content: flex-start;
+  padding: 8rem 0 0 0;
 }
 .home__scroll-link {
   writing-mode: vertical-lr;
@@ -107,14 +108,14 @@
   }
   .home__name {
     font-size: 2.6rem;
-    margin: 5rem 0 0 0;
+    
   }
   .home__profession {
     font-size: 1.6rem;
   }
   .home__img {
-    width: 50%;
-    right: 50%;
+    width: 30%;
+    right: 70%;
     bottom: 0%;
   }
 }

@@ -110,7 +110,9 @@ const Contact = () => {
             </label>
             <br />
             <button className="contact__button" type="submit">
-              Send
+              <span class="contact__button-shadow"></span>
+              <span class="contact__button-edge"></span>
+              <span class="contact__button-front">Send</span>
             </button>
           </form>
         </div>

@@ -25,36 +25,84 @@
   color: var(--lt-color);
 }
 .about__button {
-  padding: 0.6rem 2.5rem;
-  margin: 1rem 0;
-  border-radius: 0.5rem;
+  position: relative;
   border: none;
-  outline: none;
-  align-items: center;
-  background-color: initial;
-  background-image: linear-gradient(
-    rgba(179, 132, 201, 0.84),
-    rgba(54, 32, 90, 0.6) 50%
-  );
-  border-width: 0;
-  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,
-    rgba(179, 132, 201, 0.4) 0 8px 12px;
-  color: #ffffff;
+  background: transparent;
+  padding: 0;
   cursor: pointer;
-  font-weight: 700;
-  justify-content: center;
-  letter-spacing: 0.04em;
-  line-height: 16px;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,
-    rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px,
-    rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
   touch-action: manipulation;
-  vertical-align: baseline;
 }
+.about__button-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.about__button-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    var(--text-color) 0%,
+    var(--home-color) 8%,
+    var(--home-color) 92%,
+    var(--text-color) 100%
+  );
+}
+.about__button-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--bg-color);
+  background:var(--text-color);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
 .about__button:hover {
-  background-image: linear-gradient(#b384c9, #391f5b 50%);
+  filter: brightness(110%);
+}
+
+.about__button:hover .about__button-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.about__button:active .about__button-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.about__button:hover .about__button-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.about__button:active .about__button-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.about__button:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .about__social-icon {
@@ -79,7 +127,6 @@
     margin: 0 3rem 2rem 1px;
   }
   .about__button {
-    padding: 0.6rem 2.5rem;
     display: flex;
   }
   .about__social .bx:hover {

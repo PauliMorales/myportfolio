@@ -106,7 +106,8 @@
   top:50%;
   left:50%;
   margin-top:-15px;
-  margin-left:-118px;
+  margin-left: -52px;
+  
   
   &:before {
     content: '[';
@@ -226,5 +227,8 @@
   .nav__logo {
     padding: 0 1rem;
     font-size: 18px;
+  }
+  .content {
+    margin-left:-10rem;
   }
 }
