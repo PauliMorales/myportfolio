@@ -3,10 +3,10 @@
   background-color: var(--home-color);
   overflow: hidden;
   max-width: 100%;
-  padding: 4rem 1rem 0rem 1rem;
+  padding: 5px;
 }
 .home__container {
-  height: calc(100vh - 3rem);
+  height: 100vh;
   row-gap: 5rem;
 }
 .home__title {
@@ -45,8 +45,9 @@
   color: var(--nav-link);
   white-space: nowrap;
   border-right: 4px solid;
-  width: 20ch;
-  animation: typingN 3s steps(20), blinkN 0.5s infinite step-end alternate;
+  /* width: 20ch; */
+  width: 320px;
+  animation: typingN 4s steps(20), blinkN 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 @keyframes typingN {
@@ -64,8 +65,8 @@
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 23ch;
-  animation: typing 4s steps(23), blink 0.5s infinite step-end alternate;
+  width: 200px;
+  animation: typing 3s steps(23), blink 0.5s infinite step-end alternate;
   overflow: hidden;
   color: var(--lt-color);
 }
@@ -80,6 +81,7 @@
   }
 }
 .home__img {
+  max-width: 60%;
   position: absolute;
   right: 45%;
   bottom: 9%;
@@ -108,7 +110,6 @@
   }
   .home__name {
     font-size: 2.6rem;
-    
   }
   .home__profession {
     font-size: 1.6rem;
@@ -117,5 +118,11 @@
     width: 30%;
     right: 70%;
     bottom: 0%;
+  }
+  .home__name{
+    width: 460px;
+  }
+  .home__profession{
+    width: 320px;
   }
 }

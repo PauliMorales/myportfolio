@@ -27,22 +27,21 @@ const Header = ({ setTheme }) => {
       <header className="header">
         <nav className="nav">
           <div className="nav__logo">
-            <a href="#" className="content">
+            <div className="content">
               <div className="visible">
-                <p>hola</p>
+                <p><a href="#"></a> hola</p>
                 <ul>
                   <li>MUNDO!</li>
                   <li>TEAM!</li>
                   <li>TODOS!</li>
                 </ul>
               </div>
-            </a>
+            </div>
             <span className="nav__switch" onClick={toggleDarkMode}>
               <i className="bx bxs-moon"></i>
               <i className="bx bxs-sun"></i>
             </span>
           </div>
-
           <div
             className={`nav__menu ${openMenu ? "nav__menu-active" : ""}`}
             id="nav-menu"
