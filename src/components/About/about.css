@@ -9,6 +9,7 @@
   width: calc(100% - 2rem);
   margin-left: 1rem;
   margin-right: 1rem;
+  background-color: var(--white-color);
 }
 .about__img {
   display: flex;
@@ -21,6 +22,7 @@
 .about__text {
   margin: 2rem 0.5rem;
   text-align: justify;
+  color: var(--lt-color);
 }
 .about__button {
   padding: 0.6rem 2.5rem;
@@ -56,11 +58,11 @@
 }
 
 .about__social-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0 0.8rem;
 }
 .about__social-icon {
-  color: var(--first-color);
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 768px) {

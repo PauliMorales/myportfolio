@@ -81,10 +81,6 @@ const Skills = () => {
               <div className="skills__items">{renderItems(skill.items)}</div>
             </div>
           ))}
-
-          <div className="skills__img">
-            <img src="assets/img/skill.jpg" alt="" />
-          </div>
         </div>
       </section>
     </div>

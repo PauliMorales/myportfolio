@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  background-color: var(--first-color);
+  background-color: var(--home-color);
   overflow: hidden;
   max-width: 100%;
   padding: 4rem 1rem 0rem 1rem;
@@ -13,16 +13,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin: 5rem 0;
   font-size: 7rem;
-  color: var(--white-color);
+  color: var(--nav-link);
   line-height: 0.8;
   position: relative;
   z-index: 10;
   animation-name: entrada-izquierda;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
 }
-
 @keyframes entrada-izquierda {
   from {
     transform: translateX(-100%);
@@ -33,20 +34,15 @@
     opacity: 1;
   }
 }
-.home__title span {
-  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
-}
-
 .home__subtitle {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 3rem 0;
 }
-
 .home__name {
   font-size: 29px;
-  color: var(--white-color);
+  color: var(--nav-link);
   white-space: nowrap;
   border-right: 4px solid;
   width: 20ch;
@@ -71,6 +67,7 @@
   width: 23ch;
   animation: typing 4s steps(23), blink 0.5s infinite step-end alternate;
   overflow: hidden;
+  color: var(--lt-color);
 }
 @keyframes typing {
   from {
@@ -95,7 +92,7 @@
 .home__scroll-link {
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
-  color: var(--white-color);
+  color: var(--nav-link);
 }
 
 @media screen and (min-width: 768px) {
@@ -106,10 +103,11 @@
     padding: 0.5rem;
   }
   .home__title {
-    font-size: 8rem;
+    font-size: 10rem;
   }
   .home__name {
     font-size: 2.6rem;
+    margin: 5rem 0 0 0;
   }
   .home__profession {
     font-size: 1.6rem;
@@ -119,5 +117,4 @@
     right: 50%;
     bottom: 0%;
   }
-  
 }

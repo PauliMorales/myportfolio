@@ -6,12 +6,20 @@
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
-  --first-color: #dabcdf;
-  --darkviolet-color: #673b6e;
-  --white-color: #fafaff;
-  --dark-color: #2a3b47;
-  --text-color: #697477;
+  --home-color: #dabcdf;
+  --text-color: #7a4a82;
+  --bg-color: #fafaff;
+  --nav-link: #fafaff;
+  --lt-color:#4e565c;
 }
+[data-theme="dark"] {
+  --home-color: #673b6e;
+  --text-color: #dabcdf;
+  --bg-color: #364753;
+  --nav-link: #dabcdf;
+  --lt-color:#fafaff;
+}
+
 *,
 ::before,
 ::after {
@@ -50,8 +58,5 @@ img {
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
-  }
-  body {
-    margin: 0;
   }
 }

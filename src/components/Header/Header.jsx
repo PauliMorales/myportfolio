@@ -4,11 +4,22 @@ import { NAV_ITEMS } from "../../constants/arrays";
 import whatsapp from "../../assets/images/gif-whatsapp.gif";
 import "./header.css";
 
-const Header = () => {
+const Header = ({ setTheme }) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
+  };
+
+  const toggleDarkMode = () => {
+    const switchButton = document.querySelector(".nav__switch");
+    if (switchButton.classList.contains("active")) {
+      switchButton.classList.remove("active");
+      setTheme("light");
+    } else {
+      switchButton.classList.add("active");
+      setTheme("dark");
+    }
   };
 
   return (
@@ -16,12 +27,19 @@ const Header = () => {
       <header className="header">
         <nav className="nav">
           <div className="nav__logo">
-            <a href="#" className="nav__myport">
-              Mi Portafolio
+            <a href="#" className="content">
+              <div className="visible">
+                <p>hola</p>
+                <ul>
+                  <li>MUNDO!</li>
+                  <li>TEAM!</li>
+                  <li>TODOS!</li>
+                </ul>
+              </div>
             </a>
-            <span className="nav__switch">
-              <i className="bx bxs-sun"></i>
+            <span className="nav__switch" onClick={toggleDarkMode}>
               <i className="bx bxs-moon"></i>
+              <i className="bx bxs-sun"></i>
             </span>
           </div>
 

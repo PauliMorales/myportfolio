@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
@@ -8,9 +9,10 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Skills from "./components/Skills/Skills";
 
 function App() {
+  const [theme, setTheme] = useState("light");
   return (
-    <div className="App">
-      <Header />
+    <div className="App" data-theme={theme}>
+      <Header setTheme={setTheme} />
       <Home />
       <About />
       <Skills />

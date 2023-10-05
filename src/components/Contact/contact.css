@@ -1,9 +1,10 @@
 .contact__container {
   row-gap: 2rem;
+  background-color: var(--white-color);
 }
 .contact__subtitle {
   font-size: var(--normal-font-size);
-  color: var(--first-color);
+  color: var(--home-color);
 }
 .contact__text {
   display: inline-block;

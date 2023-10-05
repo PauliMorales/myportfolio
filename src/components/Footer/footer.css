@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--dark-color);
+  background-color:#2a3b47;
   max-width: 100%;
   display: grid;
   grid-template-columns: 100%;
@@ -20,28 +20,23 @@
 }
 .footer__title {
   font-size: var(--normal-font-size);
-  color: var(--white-color);
+  color: white;
   margin: 1rem 0;
   text-align: center;
 }
-.footer__text {
-  margin: 1em 0;
-  color: var(--first-color);
-}
 .footer__link {
   padding: 1rem 0;
-  color: var(--text-color);
+  color: #697477;
 }
 .footer__link:hover {
-  color: var(--first-color);
+  color: #dabcdf;
 }
 .footer__social {
   font-size: 40px;
-  margin: 1rem;
-  color: var(--text-color);
+  color: #697477;
 }
 .footer__social:hover {
-  color: var(--first-color);
+  color: var(--home-color);
 }
 .footer__item{
   text-align: center;
