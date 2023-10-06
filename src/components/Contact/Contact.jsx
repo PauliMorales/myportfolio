@@ -50,14 +50,18 @@ const Contact = () => {
         <div className="contact__container">
           <div className="contact__info">
             <h3 className="contact__subtitle">
-              <i className="bx bx-envelope"></i> EMAIL
+              <i className="bx bx-envelope"></i> CORREO ELECTRONICO
             </h3>
-            <a href="mailto:paumor271@gmail.com" className="contact__text">paumor271@gmail.com</a>
+            <a href="mailto:paumor271@gmail.com" className="contact__text">
+              paumor271@gmail.com
+            </a>
 
             <h3 className="contact__subtitle">
               <i className="bx bxs-phone-call"></i> CELULAR
             </h3>
-            <a href="tel:+573164623534" className="contact__text">+57 316 462 35 34</a>
+            <a href="tel:+573164623534" className="contact__text">
+              +57 316 462 35 34
+            </a>
 
             <h3 className="contact__subtitle">
               <i className="bx bx-home-heart"></i> RESIDENCIA
@@ -67,13 +71,14 @@ const Contact = () => {
 
           <form className="contact__form" onSubmit={handleSubmit}>
             <label className="contact__label">
-              Name:
+              Nombre:
               <input
                 className="contact__inputs"
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
+                required
               />
             </label>
             <br />
@@ -85,34 +90,37 @@ const Contact = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
+                required
               />
             </label>
             <br />
             <label className="contact__label">
-              Email:
+              Correo Electrónico:
               <input
                 className="contact__inputs"
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                required
               />
             </label>
             <br />
             <label className="contact__label">
-              Message:
+              Mensaje:
               <textarea
                 className="contact__inputs"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
+                required
               />
             </label>
             <br />
             <button className="contact__button" type="submit">
-              <span class="contact__button-shadow"></span>
-              <span class="contact__button-edge"></span>
-              <span class="contact__button-front">Send</span>
+              <span className="contact__button-shadow"></span>
+              <span className="contact__button-edge"></span>
+              <span className="contact__button-front">Enviar</span>
             </button>
           </form>
         </div>

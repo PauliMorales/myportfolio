@@ -6,7 +6,7 @@ const Modal = ({ show, close, data }) => {
     <>
       {show && (
         <div className="modal-container">
-          <i class="bx bxs-x-circle modal__close" onClick={close}></i>
+          <i className="bx bxs-x-circle modal__close" onClick={close}></i>
           <div className="modal-container__main">
             <div className="modal__title">{data.title}</div>
             <div className="modal__description">{data.description}</div>

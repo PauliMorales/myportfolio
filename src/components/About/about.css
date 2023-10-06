@@ -66,12 +66,12 @@
 .about__button-front {
   display: block;
   position: relative;
-  padding: 12px 27px;
+  padding: 6px 40px;
   border-radius: 12px;
   font-size: 1.1rem;
   font-weight: bold;
   color: var(--bg-color);
-  background:var(--text-color);
+  background: var(--text-color);
   will-change: transform;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
@@ -104,7 +104,9 @@
 .about__button:focus:not(:focus-visible) {
   outline: none;
 }
-
+.about__social{
+  margin-bottom: 12px;
+}
 .about__social-icon {
   font-size: 2rem;
   margin: 0 0.8rem;
