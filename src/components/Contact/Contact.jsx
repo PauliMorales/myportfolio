@@ -52,12 +52,12 @@ const Contact = () => {
             <h3 className="contact__subtitle">
               <i className="bx bx-envelope"></i> EMAIL
             </h3>
-            <span className="contact__text">paumor271@gmail.com</span>
+            <a href="mailto:paumor271@gmail.com" className="contact__text">paumor271@gmail.com</a>
 
             <h3 className="contact__subtitle">
               <i className="bx bxs-phone-call"></i> CELULAR
             </h3>
-            <span className="contact__text">+57 316 462 35 34</span>
+            <a href="tel:+573164623534" className="contact__text">+57 316 462 35 34</a>
 
             <h3 className="contact__subtitle">
               <i className="bx bx-home-heart"></i> RESIDENCIA

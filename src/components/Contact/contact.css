@@ -33,6 +33,8 @@
   border-radius: 0.5rem;
 }
 .contact__button {
+  display: flex;
+  margin: auto;
   position: relative;
   border: none;
   background: transparent;
@@ -118,7 +120,7 @@
   border-radius: 5px;
   margin-top: 1rem;
 }
-.contact__label{
+.contact__label {
   font-weight: bold;
   color: var(--text-color);
 }

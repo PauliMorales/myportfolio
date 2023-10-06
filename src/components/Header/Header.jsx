@@ -33,7 +33,7 @@ const Header = ({ setTheme }) => {
                 <ul>
                   <li>MUNDO!</li>
                   <li>TEAM!</li>
-                  <li>TODOS!</li>
+                  <li>TOD@S!</li>
                 </ul>
               </div>
             </div>
