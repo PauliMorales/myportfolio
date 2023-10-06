@@ -9,6 +9,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [disableButton, setDisableButton] = useState(false);
 
   const handleChange = (event) => {
     setFormData({
@@ -19,6 +20,7 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setDisableButton(true);
 
     fetch(`${import.meta.env.VITE_API_URL}/emails/contact`, {
       method: "POST",
@@ -36,9 +38,11 @@ const Contact = () => {
           email: "",
           message: "",
         });
+        setDisableButton(false);
       })
       .catch((error) => {
         console.error(error);
+        setDisableButton(false);
       });
   };
 
@@ -117,7 +121,11 @@ const Contact = () => {
               />
             </label>
             <br />
-            <button className="contact__button" type="submit">
+            <button
+              className="contact__button"
+              type="submit"
+              disabled={disableButton}
+            >
               <span className="contact__button-shadow"></span>
               <span className="contact__button-edge"></span>
               <span className="contact__button-front">Enviar</span>

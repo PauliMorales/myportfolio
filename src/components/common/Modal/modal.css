@@ -17,7 +17,7 @@
 }
 .modal-container__main {
   background-color: var(--modal-color);
-  width: 500px;
+  width: 450px;
   padding: 5rem;
   border-radius: 16px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
