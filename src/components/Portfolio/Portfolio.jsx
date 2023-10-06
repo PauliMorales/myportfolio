@@ -96,24 +96,9 @@ const Portfolio = () => {
                   setShowModal(true);
                 }}
               />
-              <div className="portfolio__link">
-                <div className="portfolio__link-name">
-                  <div className="portfolio__title">{project.title}</div>
-                  <div className="portfolio__text">{project.description}</div>
-                  <div className="portfolio__icon">
-                    <a href={project.github} target="_blank">
-                      <i className="bx bxl-github portfolio__icon-i"></i>
-                    </a>
-                    <a href={project.link} target="_blank">
-                      <i className="bx bxl-netlify portfolio__icon-i"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           ))}
         </div>
-
         <div className="portfolio__modal">
           <Modal
             show={showModal}

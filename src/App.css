@@ -1,13 +1,13 @@
 .section {
-  padding: 5rem 2rem;
+  padding: 1rem;
   background-color: var(--bg-color);
 }
 .section-title {
   position: relative;
   font-size: 2rem;
   color: var(--text-color);
-  margin: 1.5rem 0;
   text-align: center;
+  padding: 2.5rem 0;
 }
 .section-title::after {
   position: absolute;
@@ -22,12 +22,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* .section {
+  .section {
     padding-top: 3rem;
   }
   .section-title {
     margin-bottom: 3rem;
-  } */
+  }
   .section-title::after {
     width: 64px;
     top: 3rem;

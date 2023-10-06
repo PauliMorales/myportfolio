@@ -36,12 +36,10 @@
   margin-bottom: 2rem;
 }
 .nav__link {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 900;
   position: relative;
-  color: var(--nav-link);
-  text-shadow: 1px 5px 0 #969696, 1px 10px 5px #aba8a8,
-    2px 8px 20px rgba(206, 89, 55, 0.6);
+  color: var(--text-color);
 }
 .nav__link:hover {
   color:  #fff;

@@ -4,11 +4,13 @@
 }
 .contact__subtitle {
   font-size: var(--normal-font-size);
-  color: var(--home-color);
+  color: var(--text-color);
 }
 .contact__text {
   display: inline-block;
   margin-bottom: 1rem;
+  font-weight: bold;
+  color: var(--lt-color);
 }
 .contact__inputs {
   display: grid;
@@ -111,10 +113,14 @@
   outline: none;
 }
 .contact__form {
-  background: var(--first-color);
+  background: var(--home-color);
   padding: 1rem;
   border-radius: 5px;
   margin-top: 1rem;
+}
+.contact__label{
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 768px) {
