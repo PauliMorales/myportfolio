@@ -1,5 +1,5 @@
 .section {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--bg-color);
 }
 .section-title {
@@ -17,7 +17,7 @@
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
+  top: 4.7rem;
   background-color: var(--home-color);
 }
 
@@ -29,7 +29,7 @@
     margin-bottom: 3rem;
   }
   .section-title::after {
-    width: 64px;
-    top: 3rem;
+    width: 53px;
+    top: 5rem;
   }
 }

@@ -95,6 +95,7 @@
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   color: var(--nav-link);
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
